@@ -2,6 +2,9 @@
 // *** Uncomment the lines below to test
 // console.log("%cQuestion 1", "color: red") 
 
+let counter = 1; 
+counter = 2;
+
 // console.log(counter) 
 // // => 2
 // console.log("%c----------", "color: red") 
@@ -12,6 +15,8 @@
 // *** after testing, comment the line causing the error back in 
 // *** otherwise, the error will stop the rest of your code from running
 // console.log("%cQuestion 2", "color: red") 
+
+const name = 'Mark';
 
 // console.log(name)
 // => "Raffy"
@@ -25,6 +30,15 @@
 // *** Uncomment the lines below to test
 // console.log("%cQuestion 3", "color: red") 
 
+function drinkWater(thirstLevel){
+  console.log("Man I sure am thirsty"); 
+  
+  let newThirstLevel = thirstLevel - 1; 
+  console.log("Ah that hits the spot");
+
+  return newThirstLevel;
+}
+
 // console.log(drinkWater(12))
 // // => "Man I sure am thirsty"
 // // => "Ahh that hits the spot"
@@ -36,6 +50,18 @@
 // ***** Question 4 *****
 // *** Uncomment the lines below to test
 // console.log("%cQuestion 4", "color: red") 
+
+function sameSameButDifferent(num, maybeNum){
+  
+  if(num === maybeNum){
+    return "same same";
+  } else if(num === parseInt(maybeNum)){
+    return "same same (but different)";
+  } else{
+    return "different";
+  }
+}
+
 
 // console.log(sameSameButDifferent(5, 5)) 
 // // => "same same"
@@ -60,6 +86,13 @@
 // console.log(student1)
 // // => { name: "Duane", grade: 92 }
 // console.log("%c----------", "color: red")
+
+
+function updateGrade(student, grade){
+  
+}
+
+const student1 = { name: "Duane", grade: 88 };
 
 
 
@@ -99,6 +132,10 @@ function myMap(array, callback) {
 
 // ***** Callbacks - Question 1 *****
 
+function triple(num){
+  return num * 3; 
+}
+
 // *** Uncomment the lines below to test
 // console.log("%cCallbacks - Question 1", "color: red")
 
@@ -113,6 +150,10 @@ function myMap(array, callback) {
 // ***** Callbacks - Question 2 *****
 // *** Uncomment the lines below to test
 // console.log("%cCallbacks - Question 2", "color: red")
+
+function greet(name){
+  return 'Hi, ' + name + '!'; 
+}
 
 // console.log(myMap(["Raffy", "Chase"], greet)) 
 // // => ["Hi, Raffy!", "Hi, Chase!"]
